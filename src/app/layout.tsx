@@ -28,13 +28,14 @@ export default function RootLayout({
   return (
     <html lang='en' dir='rtl'>
       <body className={`${iranYekan.variable} antialiased`}>
-        {/* <MainBg /> */}
-        <Header />
-        <AdvancedCursor />
-        <BodyParallax />
-        {children}
-        <Whatsupp />
-        <Footer />
+        <div className=' bg-my-bg'>
+          <Header />
+          <AdvancedCursor />
+          <BodyParallax />
+          {children}
+          <Whatsupp />
+          <Footer />
+        </div>
       </body>
     </html>
   );

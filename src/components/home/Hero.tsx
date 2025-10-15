@@ -66,13 +66,13 @@ export default function Hero() {
             custom={0.9}
             className='flex flex-row gap-4 items-center justify-center mt-6'>
             <Link
-              href='#about'
+              href='/about-us'
               className='px-8 py-3 rounded-full md:text-[16px] text-[12px] bg-my-white text-my-dark font-medium shadow-lg hover:bg-my-dark hover:text-my-white transition-all duration-500'>
               درباره ما
             </Link>
 
             <Link
-              href='#contact'
+              href='/contact'
               className='px-8 py-3 md:text-[16px] text-[12px] rounded-full border border-my-white/50 hover:bg-my-white hover:text-my-dark transition-all duration-500'>
               تماس با ما
             </Link>
