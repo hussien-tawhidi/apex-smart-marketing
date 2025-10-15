@@ -28,7 +28,7 @@ export default function RootLayout({
   return (
     <html lang='en' dir='rtl'>
       <body className={`${iranYekan.variable} antialiased`}>
-        <MainBg />
+        {/* <MainBg /> */}
         <Header />
         <AdvancedCursor />
         <BodyParallax />
