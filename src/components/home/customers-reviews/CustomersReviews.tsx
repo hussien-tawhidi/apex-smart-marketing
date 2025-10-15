@@ -31,7 +31,7 @@ export default function CustomersSection() {
           {reviews.map((review, i) => (
             <motion.div
               key={i}
-              initial={{ opacity: 0, x: 50 }}
+              initial={{ opacity: 1, x: 50 }}
               whileInView={{ opacity: 1, x: 0 }}
               whileHover={{
                 scale: 1.02,

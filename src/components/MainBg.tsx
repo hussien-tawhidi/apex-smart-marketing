@@ -6,12 +6,7 @@ export default function MainBg() {
       <div
         className='fixed inset-0 bg-center bg-cover z-[-1]'
         style={{ backgroundImage: 'url("/assets/hero.jpg")' }}></div>
-      <motion.div
-        className='fixed inset-0 bg-center bg-cover z-[-1]'
-        style={{ backgroundImage: 'url("/assets/hero.jpg")' }}
-        animate={{ y: ["0%", "-5%"] }}
-        transition={{ ease: "easeOut", duration: 1 }}
-      />
+  
     </>
   );
 }

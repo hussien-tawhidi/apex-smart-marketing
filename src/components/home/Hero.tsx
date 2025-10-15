@@ -35,7 +35,6 @@ export default function Hero() {
         animate='show'
         variants={containerVariant}
         className=' h-screen flex items-center justify-center text-white overflow-hidden'>
-    
         <div className='relative z-10 flex flex-col justify-center items-center px-6 md:pb-0 pb-30 md:px-16 text-center space-y-6'>
           {/* Title */}
           <motion.h1
@@ -102,7 +101,7 @@ export default function Hero() {
 
         {/* Floating Arrow */}
         <motion.div
-          className='absolute md:bottom-7 bottom-30 left-1/2 -translate-x-1/2 z-10'
+          className='absolute md:bottom-7 bottom-[150px] left-1/2 -translate-x-1/2 z-10'
           animate={{ y: [0, 15, 0] }}
           transition={{
             duration: 2,
