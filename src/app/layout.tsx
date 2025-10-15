@@ -8,6 +8,7 @@ import { iranYekan } from "./(main)/Style/fonts";
 import Footer from "@/components/footer/Footer";
 import Whatsupp from "@/components/shared/Whatsupp";
 import PageTransitionWrapper from "@/components/PageTranistionWrapper";
+import MainBg from "@/components/MainBg";
 const poppins = Poppins({
   variable: "--font-poppins",
   weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
@@ -27,9 +28,7 @@ export default function RootLayout({
   return (
     <html lang='en' dir='rtl'>
       <body className={`${iranYekan.variable} antialiased`}>
-        <div
-          className='fixed inset-0 bg-center bg-cover z-[-1]'
-          style={{ backgroundImage: 'url("/assets/hero.jpg")' }}></div>
+        <MainBg />
         <Header />
         <AdvancedCursor />
         <BodyParallax />
