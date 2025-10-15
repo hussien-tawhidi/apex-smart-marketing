@@ -30,27 +30,7 @@
   }
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: var(--font-iranyekan), sans-serif;
-  background-image: url("/assets/hero.jpg");
-  background-attachment: fixed;
-  background-size: cover;
-  background-position: center;
-  transition: background-position 0.1s ease-out;
-  overflow-x: hidden;
-  margin: 0;
-  padding: 0;
-}
-body::after {
-  content: "";
-  position: fixed;
-  inset: 0;
-  background-color: rgba(0, 0, 0, 0.6); /* semi-transparent overlay */
-  pointer-events: none; /* allows clicks through overlay */
-  z-index: 0;
-}
+
 @keyframes bounceDown {
   0%,
   20%,

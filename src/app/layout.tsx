@@ -27,6 +27,9 @@ export default function RootLayout({
   return (
     <html lang='en' dir='rtl'>
       <body className={`${iranYekan.variable} antialiased`}>
+        <div
+          className='fixed inset-0 bg-center bg-cover z-[-1]'
+          style={{ backgroundImage: 'url("/assets/hero.jpg")' }}></div>
         <Header />
         <AdvancedCursor />
         <BodyParallax />
