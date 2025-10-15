@@ -35,23 +35,20 @@ export default function Hero() {
         animate='show'
         variants={containerVariant}
         className=' h-screen flex items-center justify-center text-white overflow-hidden'>
-        {/* Overlay effect */}
-        <div className='absolute inset-0 bg-[url("/assets/hero.jpg")] bg-cover bg-center opacity-25 blur-[2px]'></div>
-        <div className='absolute inset-0 bg-gradient-to-b from-black/70 via-black/30 to-transparent'></div>
-
-        <div className='relative z-10 flex flex-col justify-center items-center px-6 md:px-16 text-center space-y-6'>
+    
+        <div className='relative z-10 flex flex-col justify-center items-center px-6 md:pb-0 pb-30 md:px-16 text-center space-y-6'>
           {/* Title */}
           <motion.h1
             variants={textVariant}
             custom={0.3}
-            className='text-5xl md:text-7xl font-extrabold tracking-tight leading-tight'>
-            اپکس اسمارت مارکتینگ
+            className='sm:text-5xl text-3xl md:text-7xl font-extrabold tracking-tight leading-tight'>
+            اپیکس اسمارت مارکتینگ
           </motion.h1>
 
           <motion.h2
             variants={textVariant}
             custom={0.5}
-            className='text-2xl md:text-3xl font-light tracking-widest'>
+            className='sm:text-2xl text-xl md:text-3xl font-light tracking-widest'>
             خلاقیت و نوآوری
           </motion.h2>
 
@@ -59,7 +56,7 @@ export default function Hero() {
           <motion.p
             variants={textVariant}
             custom={0.7}
-            className='max-w-2xl text-base md:text-lg leading-relaxed'>
+            className='max-w-2xl text-base md:text-lg text-[14px] leading-relaxed'>
             ما به برندها کمک می‌کنیم تا با طراحی مدرن، رابط کاربری هوشمند و
             تجربه کاربری منحصربه‌فرد، در دنیای دیجیتال بدرخشند.
           </motion.p>
@@ -71,13 +68,13 @@ export default function Hero() {
             className='flex flex-col sm:flex-row gap-4 items-center justify-center mt-6'>
             <Link
               href='#about'
-              className='px-8 py-3 rounded-full bg-my-white text-my-dark font-medium shadow-lg hover:bg-my-dark hover:text-my-white transition-all duration-500'>
+              className='px-8 py-3 rounded-full md:text-[16px] text-[12px] bg-my-white text-my-dark font-medium shadow-lg hover:bg-my-dark hover:text-my-white transition-all duration-500'>
               درباره ما
             </Link>
 
             <Link
               href='#contact'
-              className='px-8 py-3 rounded-full border border-my-white/50 hover:bg-my-white hover:text-my-dark transition-all duration-500'>
+              className='px-8 py-3 md:text-[16px] text-[12px] rounded-full border border-my-white/50 hover:bg-my-white hover:text-my-dark transition-all duration-500'>
               تماس با ما
             </Link>
           </motion.div>
@@ -86,7 +83,7 @@ export default function Hero() {
           <motion.div
             variants={textVariant}
             custom={1.1}
-            className='flex items-center justify-center gap-6 text-2xl mt-10'>
+            className='flex items-center justify-center gap-6 text-2xl md:mt-10 mt-2'>
             {[
               { id: 1, icon: <TiSocialFacebook />, link: "/" },
               { id: 2, icon: <CiInstagram />, link: "/" },
@@ -105,14 +102,14 @@ export default function Hero() {
 
         {/* Floating Arrow */}
         <motion.div
-          className='absolute bottom-7 left-1/2 -translate-x-1/2 z-10'
+          className='absolute md:bottom-7 bottom-30 left-1/2 -translate-x-1/2 z-10'
           animate={{ y: [0, 15, 0] }}
           transition={{
             duration: 2,
             repeat: Infinity,
             ease: "easeInOut",
           }}>
-          <div className="relative w-[30px] h-[50px] border-[3px] border-white rounded-full box-border mb-2 before:content-[''] before:absolute before:bottom-[30px] before:left-1/2 before:w-[6px] before:h-[6px] before:-ml-[3px] before:bg-white before:rounded-full before:shadow-[0_-5px_3px_1px_rgba(255,255,255,0.4)] before:animate-[scrolldown_2s_infinite]" />
+          <div className="relative md:w-[30px] w-[20px] md:h-[50px] h-[35px] border-[3px] border-white rounded-full box-border mb-2 before:content-[''] before:absolute md:before:bottom-[30px] before:bottom-[20px] before:left-1/2 before:w-[6px] before:h-[6px] before:-ml-[3px] before:bg-white before:rounded-full before:shadow-[0_-5px_3px_1px_rgba(255,255,255,0.4)] before:animate-[scrolldown_2s_infinite]" />
 
           {/* Chevrons */}
           <div className='flex flex-col items-center -ml-[-2px]'>

@@ -6,11 +6,11 @@ export default function Features() {
       <div className='grid md:grid-cols-3 grid-cols-1 md:gap-5 gap-7 md:max-w-5xl sm:w-[90%] w-[95%] mx-auto'>
         {homeFeature.map((item) => (
           <div
-            className='flex items-center text-center flex-col gap-3'
+            className='flex items-center text-center flex-col gap-3 border border-my-gray/30 p-3 rounded-xl'
             key={item.id}>
-            {item.icon && <item.icon className='text-7xl' />}
+            {item.icon && <item.icon className='md:text-7xl text-5xl' />}
             <h4 className='font-bold text-xl'>{item.title}</h4>
-            <p className='text-my-white/80 md:text-[15px] text-[13px]'>
+            <p className='text-my-white/80 md:text-[15px] text-[13px] px-5'>
               {item.description}
             </p>
           </div>

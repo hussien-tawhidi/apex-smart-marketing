@@ -4,7 +4,7 @@ import "./globals.css";
 import Header from "@/components/header/Header";
 import AdvancedCursor from "@/components/shared/AdvancedCursor";
 import BodyParallax from "@/components/shared/BodyParalax";
-import { iranYekan } from "./Style/fonts";
+import { iranYekan } from "./(main)/Style/fonts";
 import Footer from "@/components/footer/Footer";
 import Whatsupp from "@/components/shared/Whatsupp";
 const poppins = Poppins({

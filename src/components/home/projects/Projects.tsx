@@ -2,7 +2,7 @@
 
 import React from "react";
 import ProjectSlider from "./ProjectSlider";
-import {  BsArrowRight } from "react-icons/bs";
+import {  BsArrowLeft, BsArrowRight } from "react-icons/bs";
 import { motion } from "framer-motion";
 export default function Projects() {
   return (
@@ -40,8 +40,8 @@ export default function Projects() {
             <span className='font-medium group-hover:underline text-primary'>
               مشاهده پروژه‌های منتخب
             </span>
-            <div className='p-2 rounded-full bg-primary/20 group-hover:bg-primary/40 transition-colors'>
-              <BsArrowRight className='text-2xl text-primary group-hover:-translate-x-1 transition-transform' />
+            <div className='p-1 rounded-full bg-primary/20 group-hover:bg-primary/40 transition-colors'>
+              <BsArrowLeft className='text-2xl text-primary group-hover:-translate-x-1 transition-transform' />
             </div>
           </motion.div>
         </motion.div>

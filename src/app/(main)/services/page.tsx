@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import { motion } from "framer-motion";
-import { graphicServices, webServices } from "../../../constant/services";
+import { graphicServices, webServices } from "../../../../constant/services";
 import ServicesCard from "@/components/services/ServicesCard";
 
 export default function ServicesPage() {
@@ -31,9 +31,8 @@ export default function ServicesPage() {
           طراحی وب و بازاریابی دیجیتال فراهم کرده‌ایم.
         </p>
       </motion.div>
-
       {/* 🔹 دسته‌بندی / فیلتر */}
-      <div className='flex gap-4 mb-8'>
+      <div className='flex md:flex-row flex-col gap-4 mb-8'>
         {categories.map((cat) => (
           <button
             key={cat.id}
