@@ -35,14 +35,6 @@ body {
   color: var(--foreground);
   font-family: var(--font-iranyekan), sans-serif;
 }
-body::after {
-  content: "";
-  position: fixed;
-  inset: 0;
-  background-color: rgba(0, 0, 0, 0.6); /* semi-transparent overlay */
-  pointer-events: none; /* allows clicks through overlay */
-  z-index: 0;
-}
 @keyframes bounceDown {
   0%,
   20%,

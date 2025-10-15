@@ -101,7 +101,7 @@ export default function Hero() {
 
         {/* Floating Arrow */}
         <motion.div
-          className='absolute md:bottom-7 bottom-[150px] left-1/2 -translate-x-1/2 z-10'
+          className='absolute md:bottom-7 md:block hidden bottom-[150px] left-1/2 -translate-x-1/2 z-10'
           animate={{ y: [0, 15, 0] }}
           transition={{
             duration: 2,
