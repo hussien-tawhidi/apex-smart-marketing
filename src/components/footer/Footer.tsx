@@ -90,21 +90,8 @@ export default function Footer() {
       <div className='h-[1px] bg-gray-800 my-10 opacity-50'></div>
 
       {/* Footer Bottom */}
-      <div className='flex flex-col md:flex-row-reverse items-center justify-between gap-4 text-my-gray text-sm'>
+      <div className='flex flex-col md:flex-row-reverse items-center justify-between gap-4 text-my-gray pb-10 text-sm'>
         <p>© 2025 تمامی حقوق برای شرکت شما محفوظ است.</p>
-
-        {/* Scroll to top button */}
-        <button
-          className='group relative z-10 w-[50px] h-[50px] rounded-full border-none cursor-pointer select-none bg-my-white transition-all duration-200 shadow-none hover:shadow-[0_1px_5px_rgba(0,0,0,0.2)]'
-          onClick={scrollToTop}>
-          {/* SVG Arrow */}
-          <svg
-            xmlns='http://www.w3.org/2000/svg'
-            className='absolute left-1/2 top-1/2 w-[20px] transition-all duration-300 h-[20px] fill-my-gray -translate-x-1/2 -translate-y-1/2 group-hover:animate-[bounce_2s_linear_infinite]'
-            viewBox='0 0 24 24'>
-            <path d='M0 16.67l2.829 2.83 9.175-9.339 9.167 9.339 2.829-2.83-11.996-12.17z' />
-          </svg>
-        </button>
       </div>
     </footer>
   );

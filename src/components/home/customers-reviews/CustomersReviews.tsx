@@ -33,8 +33,6 @@ export default function CustomersSection() {
               key={i}
               initial={{ opacity: 0, x: 50 }}
               whileInView={{ opacity: 1, x: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.6, delay: i * 0.15 }}
               whileHover={{
                 scale: 1.02,
                 boxShadow: "0 8px 24px rgba(0,0,0,0.15)",
@@ -71,7 +69,7 @@ export default function CustomersSection() {
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.6 }}
           viewport={{ once: true }}
-          className='flex-1 flex flex-col items-end space-y-5'>
+          className='flex-1 flex flex-col md:items-end space-y-5'>
           <h2 className='text-4xl md:text-5xl font-bold leading-snug text-my-white'>
             <span className='block'>نظر مشتریان ما</span>
           </h2>

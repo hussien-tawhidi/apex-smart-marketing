@@ -7,6 +7,7 @@ import BodyParallax from "@/components/shared/BodyParalax";
 import { iranYekan } from "./(main)/Style/fonts";
 import Footer from "@/components/footer/Footer";
 import Whatsupp from "@/components/shared/Whatsupp";
+import PageTransitionWrapper from "@/components/PageTranistionWrapper";
 const poppins = Poppins({
   variable: "--font-poppins",
   weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
@@ -26,14 +27,12 @@ export default function RootLayout({
   return (
     <html lang='en' dir='rtl'>
       <body className={`${iranYekan.variable} antialiased`}>
-        <div className=''>
-          <Header />
-          <AdvancedCursor />
-          <BodyParallax />
-          {children}
-          <Whatsupp />
-          <Footer />
-        </div>
+        <Header />
+        <AdvancedCursor />
+        <BodyParallax />
+        {children}
+        <Whatsupp />
+        <Footer />
       </body>
     </html>
   );

@@ -7,7 +7,11 @@ import { TbHammer } from "react-icons/tb";
 import { LuContact } from "react-icons/lu";
 import { motion } from "framer-motion";
 
-export default function MobileBottomNav({ toggleMenu }: { toggleMenu: () => void }) {
+export default function MobileBottomNav({
+  toggleMenu,
+}: {
+  toggleMenu: () => void;
+}) {
   const pathname = usePathname() ?? "";
 
   const navItems = [
@@ -18,7 +22,7 @@ export default function MobileBottomNav({ toggleMenu }: { toggleMenu: () => void
 
   return (
     <header
-      className={`flex md:hidden fixed bottom-0 left-0 right-0 items-center justify-around py-3 px-4 z-50 bg-my-bg/90 backdrop-blur-[2px] border-t border-white/10`}>
+      className={`flex md:hidden fixed bottom-0 left-0 right-0 items-center justify-between px-4 py-3 z-50 bg-my-bg/90 backdrop-blur-[2px] border-t border-white/10`}>
       {navItems.map((item, index) => {
         const isActive = pathname === item.href;
 

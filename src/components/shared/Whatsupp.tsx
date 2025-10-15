@@ -9,7 +9,7 @@ export default function Whatsupp() {
       href='https://wa.me/989932268115'
       target='_blank'
       rel='noopener noreferrer'
-      className='fixed md:bottom-6 bottom-20 right-6 z-50 flex items-center justify-center md:w-10 md:h-10 w-8 h-8 rounded-full bg-my-green shadow-lg hover:shadow-green-500/50 text-my-white transition-all duration-300 hover:scale-110 group'
+      className='fixed md:bottom-6 bottom-24 right-6 z-50 flex items-center justify-center md:w-10 md:h-10 w-8 h-8 rounded-full bg-my-green shadow-lg hover:shadow-green-500/50 text-my-white transition-all duration-300 hover:scale-110 group'
       whileHover={{ scale: 1.1 }}
       whileTap={{ scale: 0.95 }}>
       <FaWhatsapp className='md:text-2xl text-xl' />

@@ -40,8 +40,9 @@ export default function ContactPage() {
               <p className='flex items-center gap-2'>
                 <FaEnvelope className='text-my-orange' /> mountain@point.com
               </p>
-              <p className='flex items-center gap-2'>
-                <FaPhoneAlt className='text-my-orange' /> ۰۹۹۳۲۲۶۸۱۱۵
+              <p className='flex items-center justify-end gap-2' dir='ltr'>
+                +98123456789
+                <FaPhoneAlt className='text-my-orange' />
               </p>
             </div>
           </div>
