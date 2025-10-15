@@ -7,7 +7,7 @@ import { TbHammer } from "react-icons/tb";
 import { LuContact } from "react-icons/lu";
 import { motion } from "framer-motion";
 
-export default function MobileBottomNav({ toggleMenu }) {
+export default function MobileBottomNav({ toggleMenu }: { toggleMenu: () => void }) {
   const pathname = usePathname() ?? "";
 
   const navItems = [
