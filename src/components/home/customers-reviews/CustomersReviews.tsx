@@ -24,7 +24,7 @@ export default function CustomersSection() {
   ];
 
   return (
-    <section className='relative w-full py-24 bg-my-bg/60 overflow-hidden'>
+    <section className='relative w-full border-t border-b border-my-gray/30 py-24 bg-my-bg/60 overflow-hidden'>
       <div className='max-w-7xl mx-auto flex flex-col-reverse md:flex-row items-center justify-between px-6 md:px-10 gap-16 relative z-10'>
         {/* Right Section */}
         <div className='flex-1 flex flex-col gap-6 relative'>
@@ -37,13 +37,13 @@ export default function CustomersSection() {
                 scale: 1.02,
                 boxShadow: "0 8px 24px rgba(0,0,0,0.15)",
               }}
-              className={`relative rounded-xl shadow-lg p-5 pr-8 flex items-center gap-4 border-r-[6px] transition-all duration-300 ${
+              className={`relative rounded-xl shadow-lg p-5 pr-8 flex items-center gap-4 border border-r-[20px] transition-all duration-300 ${
                 review.active
-                  ? "bg-my-white border-my-red transform md:translate-x-10"
-                  : "bg-my-white border-my-gray/40 hover:border-my-red/70"
+                  ? " border-my-red transform md:translate-x-10"
+                  : " border-my-gray/40 hover:border-my-red/70"
               }`}>
               <div className='text-right flex-1'>
-                <h4 className='text-lg font-semibold text-my-dark'>
+                <h4 className='text-lg font-semibold'>
                   {review.name}
                 </h4>
                 <p className='text-my-gray text-sm mt-1'>{review.text}</p>
@@ -57,7 +57,7 @@ export default function CustomersSection() {
               />
               <FaQuoteRight
                 className={`${
-                  review.active ? "text-my-red" : "text-my-light"
+                  review.active ? "text-my-red" : ""
                 } text-xl absolute top-3 left-3`}
               />
             </motion.div>
@@ -73,7 +73,7 @@ export default function CustomersSection() {
           <h2 className='text-4xl md:text-5xl font-bold leading-snug text-my-white'>
             <span className='block'>نظر مشتریان ما</span>
           </h2>
-          <p className='leading-relaxed text-my-white text-base md:w-3/4'>
+          <p className='leading-relaxed text-my-white md:text-left text-base md:w-3/4'>
             ارتباط صمیمی، تعهد بالا و دقت در جزئیات باعث رضایت کامل مشتریان ما
             شده است. همیشه تلاش می‌کنیم تجربه‌ای متفاوت و خاص ارائه دهیم.
           </p>

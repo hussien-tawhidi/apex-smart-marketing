@@ -34,7 +34,7 @@ export default function Hero() {
         initial='hidden'
         animate='show'
         variants={containerVariant}
-        className=' flex items-center z-10 relative justify-center text-white overflow-hidden pt-30'>
+        className=' flex items-center md:min-h-screen z-10 relative justify-center text-white'>
         <div className='relative z-10 flex flex-col justify-center items-center px-6 md:pb-0 pb-30 md:px-16 text-center space-y-6'>
           {/* Title */}
           <motion.h1
@@ -101,7 +101,7 @@ export default function Hero() {
 
         {/* Floating Arrow */}
         <motion.div
-          className='absolute md:bottom-7 md:block hidden bottom-[150px] left-1/2 -translate-x-1/2 z-10'
+          className='absolute  md:block hidden bottom-10 left-1/2 -translate-x-1/2 z-10'
           animate={{ y: [0, 15, 0] }}
           transition={{
             duration: 2,

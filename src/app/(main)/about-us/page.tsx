@@ -13,8 +13,10 @@ export default function AboutUsPage() {
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.7 }}
         className='text-center mb-20'>
-        <h1 className='text-5xl font-extrabold mb-4'>درباره ما</h1>
-        <p className='max-w-2xl mx-auto leading-relaxed'>
+        <h1 className='text-5xl md:text-center text-right font-extrabold mb-4'>
+          درباره ما
+        </h1>
+        <p className='max-w-2xl mx-auto md:text-center text-right leading-relaxed'>
           ما یک تیم خلاق و متخصص هستیم که با هدف ارائه خدمات نوآورانه در زمینه
           طراحی وب، برندینگ و بازاریابی دیجیتال فعالیت می‌کنیم.
         </p>
@@ -99,12 +101,12 @@ export default function AboutUsPage() {
           {[
             {
               name: "حسین توحیدی",
-              role: "طراح و توسعه‌دهنده وب",
+              role: "طراح و برنامه نویس",
               img: "/assets/services/social.jpg",
             },
             {
               name: "مهدی همت",
-              role: "گرافیست و طراح برند",
+              role: "گرافیست",
               img: "/assets/services/social.jpg",
             },
             {

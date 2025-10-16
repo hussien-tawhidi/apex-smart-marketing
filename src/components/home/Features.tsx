@@ -1,6 +1,6 @@
 "use client";
 
-import { homeFeature } from "../../../constant";
+import { homeFeature, homeService } from "../../../constant";
 import { motion, Variants } from "framer-motion";
 
 const containerVariants = {
