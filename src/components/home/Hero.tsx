@@ -34,7 +34,7 @@ export default function Hero() {
         initial='hidden'
         animate='show'
         variants={containerVariant}
-        className=' flex items-center md:min-h-screen z-10 relative justify-center text-white'>
+        className=' flex items-center md:min-h-screen z-10 relative justify-center text-white h-screen'>
         <div className='relative z-10 flex flex-col justify-center items-center px-6 md:pb-0 pb-30 md:px-16 text-center space-y-6'>
           {/* Title */}
           <motion.h1

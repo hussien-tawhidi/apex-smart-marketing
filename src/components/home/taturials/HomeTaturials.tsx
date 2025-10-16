@@ -1,6 +1,7 @@
 "use client";
 import { motion } from "framer-motion";
 import Image from "next/image";
+import Link from "next/link";
 import { FaArrowLeft } from "react-icons/fa";
 
 export default function HomeTutorials() {
@@ -39,13 +40,16 @@ export default function HomeTutorials() {
     <section className='py-20 relative z-10'>
       <div className='max-w-6xl mx-auto px-6'>
         {/* Title */}
-        <div className='text-right mb-14'>
-          <h2 className='text-4xl md:text-5xl font-bold text-gray-800 dark:text-white'>
-            جدیدترین آموزش‌ها
-          </h2>
-          <p className='mt-3 text-gray-600 dark:text-gray-400'>
-            با جدیدترین آموزش‌های ما همیشه به‌روز بمانید.
-          </p>
+        <div className='flex items-center justify-between'>
+          <div className='text-right mb-14'>
+            <h2 className='text-4xl md:text-5xl font-bold text-gray-800 dark:text-white'>
+              جدیدترین آموزش‌ها
+            </h2>
+            <p className='mt-3 text-gray-600 dark:text-gray-400'>
+              با جدیدترین آموزش‌های ما همیشه به‌روز بمانید.
+            </p>
+          </div>
+          <Link href={"/taturials"} className="border border-my-gray/30 py-1 px-2 rounded">همه اموزش ها</Link>
         </div>
 
         {/* Tutorials grid */}
